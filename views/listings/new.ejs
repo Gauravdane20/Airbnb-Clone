@@ -1,0 +1,175 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+  <div class="row mt-3">
+    <div class="col-8 offset-2">
+      <!-- <br /><br /> -->
+      <h3>Create a new Listing</h3>
+
+      <form
+        method="POST"
+        action="/listings"
+        novalidate
+        class="needs-validation"
+        enctype="multipart/form-data"
+      >
+        <div class="mb-3">
+          <label for="title" class="form-label">Title</label>
+          <input
+            type="text"
+            name="listing[title]"
+            placeholder="Enter a catchy title."
+            class="form-control"
+            required
+          />
+          <div class="valid-feedback">Title looks good!</div>
+        </div>
+
+        <div class="mb-3">
+          <label for="description" class="form-label">Description</label>
+          <textarea
+            type="text"
+            name="listing[description]"
+            class="form-control"
+            required
+          ></textarea>
+          <div class="invalid-feedback">Please enter a short description!</div>
+        </div>
+
+        <div class="mb-3">
+          <label for="image" class="form-label">Upload Listing Image</label>
+          <input
+            type="file"
+            name="listing[image]"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <!-- category options -->
+        <div class="mb-3">
+          <label for="category" class="form-label">Category(Optional)</label>
+          <div class="multiSelect">
+            <ul class="row row-cols-6 justify-content-center gap-2 text-center">
+              <li class="col">
+                <label for="1"> <i class="fa-solid fa-bed"></i> Rooms</label>
+                <input
+                  type="checkbox"
+                  value="Rooms"
+                  name="listing[category][]"
+                  id="1"
+                />
+              </li>
+
+              <li class="col">
+                <label for="2"><i class="fa-solid fa-water"></i> Lake</label>
+                <input
+                  type="checkbox"
+                  value="Lake"
+                  name="listing[category][]"
+                  id="2"
+                />
+              </li>
+
+              <li class="col">
+                <label for="3"
+                  ><i class="fa-solid fa-umbrella-beach"></i>Beach</label
+                >
+                <input
+                  type="checkbox"
+                  value="Beach"
+                  name="listing[category][]"
+                  id="3"
+                />
+              </li>
+
+              <li class="col">
+                <label for="4">
+                  <i class="fa-solid fa-mountain-city"></i>Mountains</label
+                >
+                <input
+                  type="checkbox"
+                  value="Mountains"
+                  name="listing[category][]"
+                  id="4"
+                />
+              </li>
+
+              <li class="col">
+                <label for="5">
+                  <i class="fa-solid fa-person-swimming"></i>Pool</label
+                >
+                <input
+                  type="checkbox"
+                  value="Pool"
+                  name="listing[category][]"
+                  id="5"
+                />
+              </li>
+
+              <li class="col">
+                <label for="6"> <i class="fa-solid fa-city"></i>City</label>
+                <input
+                  type="checkbox"
+                  value="City"
+                  name="listing[category][]"
+                  id="6"
+                />
+              </li>
+
+              <li class="col">
+                <label for="7"
+                  ><i class="fa-solid fa-campground"></i>Camping</label
+                >
+                <input
+                  type="checkbox"
+                  value="Camping"
+                  name="listing[category][]"
+                  id="7"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="mb-3 col-md-2">
+            <label for="price" class="form-label">Price</label>
+            <input
+              type="number"
+              name="listing[price]"
+              placeholder="1200"
+              class="form-control"
+              required
+            />
+            <div class="invalid-feedback">Price should be valid.</div>
+          </div>
+
+          <div class="mb-3 col-md-4">
+            <label for="location" class="form-label">Location</label>
+            <input
+              type="text"
+              name="listing[location]"
+              placeholder="Jaipur, Rajasthan."
+              class="form-control"
+              required
+            />
+            <div class="invalid-feedback">Location should be valid.</div>
+          </div>
+          <div class="mb-3 col-md-6">
+            <label for="country" class="form-label">Country</label>
+            <input
+              type="text"
+              name="listing[country]"
+              placeholder="India."
+              class="form-control"
+              required
+            />
+            <div class="invalid-feedback">Country name should be valid.</div>
+          </div>
+        </div>
+
+        <button class="btn btn-dark add-btn mt-3">Add</button>
+      </form>
+    </div>
+  </div>
+</body>
