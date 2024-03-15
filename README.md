@@ -43,7 +43,7 @@ To get started with this project, follow these steps:
 
   CLOUD_API_KEY=key
   
-  CLOUN_API_SECRET=secret
+  CLOUD_API_SECRET=secret
   
   MAP_TOKEN=token
   
