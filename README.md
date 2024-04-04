@@ -32,7 +32,7 @@ To get started with this project, follow these steps:
 ## 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Gauravdane20/Airbnb-Clone.git
+   git clone https://github.com/Gauravdane20/Stay-Book.git
    ```
    
 
