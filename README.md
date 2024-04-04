@@ -1,8 +1,8 @@
-# Airbnb Clone
+# Stay-Book
 
 ![Airbnb Clone](/public/assests/Logo.svg)
 
-This project is a clone of the Airbnb website, created to showcase my development skills using Node.js, Express, MongoDB, and Mapbox.
+StayBook is an innovative Airbnb-inspired platform, meticulously crafted using HTML, CSS, and JavaScript for the frontend, with Express.js, Node.js, and MongoDB powering the backend.
 
 ## Screenshots
 
@@ -55,7 +55,7 @@ To get started with this project, follow these steps:
  ## Install dependencies:
 
 ```bash
-  npm install
+  npm install --force
 ```
 
 ## Start
